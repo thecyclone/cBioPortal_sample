@@ -76,7 +76,7 @@
                 <img src="img/cbioportal_logo.png" height=60 width=170>
                 <br>
                 <br>
-                <button class="btn btn-danger btn-sm">Usage Guidelines</button>
+                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#guidelines">Usage Guidelines</button>
                 
                 </div>
                 <div class="col-xs-12 col-sm-5">
@@ -93,7 +93,23 @@
         </div>
        </div>
     </header>
-    
+    <div id="guidelines" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Usage Guidelines </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled" style="list-style-type:square">
+                    <li>Please adhere to the TCGA publication guidelines when using TCGA data in your publications.</li>
+                    <li>Please cite <a href="http://www.ncbi.nlm.nih.gov/pubmed/23550210" target="_blank">Gao et al. Sci. Signal. 2013</a> &amp; <a href="http://cancerdiscovery.aacrjournals.org/content/2/5/401.abstract" target="_blank">Cerami et al. Cancer Discov. 2012</a> when publishing results based on cBioPortal. </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
         <div class="row row-content">
                 <div class="col-xs-12 col-sm-4 col-sm-push-8">
                 <div class="panel panel-primary">
@@ -261,16 +277,6 @@
         $('[data-toggle="tooltip"]').tooltip(); 
         });
 </script>
-    <script>
-        $("#Login").on('click', function(ev) {
-            $('#loginModal').modal('show');
-        });
-    </script>
-    <script>
-        $("#ReserveTable").on('click', function(ev) {
-            $('#reserveTable').modal('show');
-        });
-    </script>
 
 </body>
 
