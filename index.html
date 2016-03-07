@@ -216,12 +216,12 @@
                         <h3 class="panel-title" align="center"><span class="label label-warning">Links to mockups</span></h3>
                     </div>
                     <div class="panel-body">
-                        <button class="btn btn-success btn-sm"><a href="patientview.html" target="_blank"><font color="white">Patient View</font></a></button>
-                        <button class="btn btn-success btn-sm"><a href="studyview.html" target="_blank"><font color="white">Study View</font></a></button>
+                        <a class="btn btn-success btn-sm" href="patientview.html" target="_blank"><font color="white">Patient View</font></a>
+                        <a class="btn btn-success btn-sm" href="studyview.html" target="_blank"><font color="white">Study View</font></a>
                         <br>
                         <br>
-                        <button class="btn btn-success btn-sm"><a href="#query" class="smooth-scroll"><font color="white">Query Interface</font></a></button>
-                        <button class="btn btn-success btn-sm"><a href="query.html" target="_blank"><font color="white">Query Result</font></a></button>
+                        <a class="btn btn-success btn-sm" href="#query" class="smooth-scroll"><font color="white">Query Interface</font></a>
+                        <a class="btn btn-success btn-sm" href="query.html" target="_blank"><font color="white">Query Result</font></a>
                     </div>
                 </div>
             </div>
@@ -238,15 +238,93 @@
                 <li><a href="#tab2">Download Data</a></li>
             </ul>
             <section id="tab1" class="tab-content active">
+                <div class="div-border">
                 <div>
-                    Content in tab 1
+                    <a data-toggle="collapse" data-target="#demo"><label><input type="checkbox" value="">Option 1</label></a>
+                    <div id="demo" class="collapse">
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                    </div>
                 </div>
+                <div>
+                    <a data-toggle="collapse" data-target="#demo2"><label><input type="checkbox" value="">Option 2</label></a>
+                    <div id="demo2" class="collapse">
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                    </div>
+                </div>
+                <div>
+                    <a data-toggle="collapse" data-target="#demo3"><label><input type="checkbox" value="">Option 3</label></a>
+                    <div id="demo3" class="collapse">
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;<input type="checkbox" value="">Option 1</label>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <div class="div-border">
+                <form class="form-inline">
+                    <span class="label label-info">Select Date Type Priority</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Mutation and CNA</label>
+                    </div>
+                    &nbsp;
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Only Mutation</label>
+                    </div>
+                    &nbsp;
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">Only CNA</label>
+                    </div>
+                </form>
+                </div>
+                <br>
+                <div class="div-border">
+                <form class="form-inline">
+                    <span class="label label-info">Enter Gene Set</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.cbioportal.org/onco_query_lang_desc.jsp" target="_blank"> Advanced: Onco Query Language (OQL)</a>
+                </form>
+                <br>
+                <br>
+                    <select size="1" name="udl" class="dropdown-toggle">
+                        <option value="">User Defined List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">Value2</option>
+                        <option value="">Value3</option>
+                        <option value="">Value4</option>
+                    </select>
+                    <br>
+                    <br>
+                    <textarea class ="form-control" placeholder = "Enter HUGO Gene Symbols or GENE Aliases" rows="4" cols="83"></textarea> 
             </section>
             <section id="tab2" class="tab-content hide">
                 <div>
                     Content in tab 2
                 </div>
             </section>
+            </div>
             </div>
             </div>
         </div>

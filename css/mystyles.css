@@ -118,3 +118,8 @@ body {
 .tab-content.active{
     display: block;
 }
+
+.div-border{
+  border:1px solid grey;
+  border-radius:5px;
+}
