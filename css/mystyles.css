@@ -110,3 +110,11 @@ body {
 .img1{
   height: 150px;
 }
+
+.tab-content.hide{
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+}
