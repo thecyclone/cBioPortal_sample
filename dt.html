@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    <title>cBioPortal for Cancer Genomics</title>
+     <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-inverse navbar-fixed-top loi" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                        <li><a href="aboutus.html"><span class="fa fa-database"
+                         aria-hidden="true"></span> Data Sets</a></li>
+                        <li><a href="contactus.html"><i class="fa fa-plus-circle"
+                            aria-hidden="true"></i> Web API</a></li>
+                        <li><a href="contactus.html"><i class="fa fa-bar-chart"
+                            aria-hidden="true"></i> R/MATLAB</a></li>
+                        <li><a href="contactus.html"><i class="fa fa-book"
+                            aria-hidden="true"></i> Tutorials</a></li>
+                        <li><a href="contactus.html"><i class="fa fa-question-circle"
+                            aria-hidden="true"></i> FAQ</a></li>
+                        <li><a href="contactus.html"><i class="fa fa-newspaper-o"
+                            aria-hidden="true"></i> News</a></li>
+                        <li><a href="contactus.html"><i class="glyphicon glyphicon-info-sign"
+                            aria-hidden="true"></i> About</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a class= "btn" id="Login">
+                    <span class="fa fa-pie-chart"></span> Visualise Your Data</a>
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+    </nav>    
+
+    <header class="jumbotron">
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="container">
+            <div class="col-xs-12 col-sm-12">
+                
+
+            </div>
+             <div class="col-xs-12 col-sm-4">
+                <img src="img/cbioportal_logo.png" height=60 width=170>
+                <br>
+                <br>
+                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#guidelines">Usage Guidelines</button>
+                
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <img src="img/tag_line.png" class="img-responsive">
+                    <p><font size="2" color="black">The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.</font>&nbsp;&nbsp;&nbsp;</p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-success btn-sm" data-toggle="tooltip" title="Beat Rare Cancers. Donate to cycle for Survival">Join the Battle</button>
+                </div>
+           
+                <div class="col-xs-12 col-sm-3">
+                    <img src="img/mskcc_logo_3d_grey.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+       </div>
+    </header>
+    <div id="guidelines" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Usage Guidelines </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled" style="list-style-type:square">
+                    <li>Please adhere to the TCGA publication guidelines when using TCGA data in your publications.</li>
+                    <li>Please cite <a href="http://www.ncbi.nlm.nih.gov/pubmed/23550210" target="_blank">Gao et al. Sci. Signal. 2013</a> &amp; <a href="http://cancerdiscovery.aacrjournals.org/content/2/5/401.abstract" target="_blank">Cerami et al. Cancer Discov. 2012</a> when publishing results based on cBioPortal. </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+        <div class="row-content">
+            
+        </div>
+            
+
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled footerlist">
+                        <li><a href="http://www.cbioportal.org/" target="_blank">cBioPortal</a></li>
+                        <li><a href="https://www.mskcc.org/" target="_blank">MSKCC</a></li>
+                        <li><a href="http://cancergenome.nih.gov/" target="_blank">TCGA</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <ul class="list-unstyled list-inline footerlist">
+                        <li><h5>Questions and Feedback:</h5></li>
+                        <li><i class="fa fa-users"></i> <a href="https://groups.google.com/forum/#!forum/cbioportal">User Discussion Group</a></li>
+                        <li><i class="fa fa-star"></i> <a href="https://www.biostars.org/t/cbioportal/">Biostars</a></li>
+                        <li><i class="fa fa-envelope"></i>: 
+                                 <a href="mailto:cbioportal@googlegroups.com">cbioportal@googlegroups.com</a></li>
+                    </ul>
+                    <div class="nav navbar-nav footericons">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                    <div class="col-xs-12">
+                        <p> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© cBioPortal 2016</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+                          $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+                        $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+        });
+</script>
+<script>
+    $(document).ready(function() {
+        $('.nav-tabs > li > a').click(function(event){
+        event.preventDefault();//stop browser to take action for clicked anchor
+                    
+        //get displaying tab content jQuery selector
+        var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');                  
+                    
+        //find actived navigation and remove 'active' css
+        var actived_nav = $('.nav-tabs > li.active');
+        actived_nav.removeClass('active');
+                    
+        //add 'active' css into clicked navigation
+        $(this).parents('li').addClass('active');
+                    
+        //hide displaying tab content
+        $(active_tab_selector).removeClass('active');
+        $(active_tab_selector).addClass('hide');
+                    
+        //show target tab content
+        var target_tab_selector = $(this).attr('href');
+        $(target_tab_selector).removeClass('hide');
+        $(target_tab_selector).addClass('active');
+         });
+      });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#example').DataTable();
+        } );
+    </script>
+
+</body>
+
+</html>
